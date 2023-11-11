@@ -15,10 +15,11 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 
 // Route create of Hello, Laravel!
-Route::get('/hello', [UserController::class, 'hello']);
+
+Route::get('/', [UserController::class, 'index']);
